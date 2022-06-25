@@ -1,0 +1,30 @@
+#contact{
+    text-align: -webkit-center;
+}
+
+.contact-container {
+    display: flex;
+    border: 2px solid black;
+    padding: 25px;
+    place-content: center;
+    overflow: hidden;
+    width: max-content;
+    text-align-last: center;
+    margin-bottom: 200px;
+}
+
+.rsvp {
+    padding: 10px;
+    display: block;
+    margin: 7px;
+    width: 270px;
+    border: 2px dotted grey;
+    border-radius: 20px;
+}
+
+.submit {
+    margin-top: 20px;
+    font-size: large;
+    box-shadow: 1px 1px 4px rgb(22 22 22 / 70%), -1px -1px 4px rgb(22 22 22 / 70%);
+    cursor: pointer;
+}

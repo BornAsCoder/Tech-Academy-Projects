@@ -1,0 +1,97 @@
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.photo-container {
+    margin: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.photo-container img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+
+.sign-info {
+    display: none;
+    position: absolute;
+    opacity: 1; 
+    margin: 20px;
+    z-index: 222;
+}
+
+.photo-container:active  .sign-info {
+    display: block;
+    opacity: 1;
+    border-radius: 4px;
+}
+
+
+.photo-overlay {
+    opacity: 0;
+}
+
+.photo-container:hover .photo-overlay {
+    opacity: 1;
+}
+
+/* ===========================
+        Table
+==============================*/
+
+table {
+    border-collapse: collapse;
+    border-color: #9ABAD9;
+    border-spacing: 0;
+    border-style: groove;
+    border-width: 1px;
+    margin: 0px auto;
+    display: block;
+    width: max-content;
+}
+
+table td {
+    background-color: #EBF5FF;
+    border-color: #9ABAD9;
+    border-style: solid;
+    border-width: 0px;
+    color: #444;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+table td:nth-child(odd){
+    font-weight: 550;
+    padding-right: 10px;
+}
+
+table th {
+    background-color: #409cff;
+    border-color: #9ABAD9;
+    border-style: solid;
+    border-width: 0px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
