@@ -12,4 +12,4 @@ These are projects that I made during learning @ https://www.learncodinganywhere
 ### Bootstrap4 project
 **This is an example one page website I've made with html, css and bootstrap framework**
 ### Portfolio-Website
-**Simple porftolio website made with html+css**
+**Simple portfolio website made with html+css**
