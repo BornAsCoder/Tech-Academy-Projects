@@ -5,7 +5,7 @@ These are projects that I made during learning @ [TechAcademy](https://www.learn
 ## Projects
 
 * [Zodiac Signs](https://github.com/BornAsCoder/Tech-Academy-Projects/tree/main/One-Page-Website)
-* [The Enterprise Learning Academy](https://github.com/BornAsCoder/Tech-Academy-Projects/tree/main/bootstrap4_project)
+* [The Enterprise Learning Academy](https://github.com/BornAsCoder/Tech-Academy-Projects/tree/main/bootstrap4)
 * [Portfolio Website](https://github.com/BornAsCoder/Tech-Academy-Projects/tree/main/Portfolio-Website)
 
 ### Zodiac Signs
