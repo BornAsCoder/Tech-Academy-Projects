@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="JS/main.js"></script>
+</head>
+
+<body>
+
+    <p id="Math" onmouseover="fnShow()" onmouseout="fnHide()">If a year have 365 days</p>
+
+
+    <div id="calc" style="margin: 5px; text-align: center; ">
+        <form id="calculator">
+            <input type="number" id="var1" style="width: 130px;" value="" placeholder="Enter a number"><span
+                id="opSign"></span>
+            <input type="number" id="var2" style="width: 130px;" value="" placeholder="Enter a number"> =
+            <input type="text" id="result" style="width: 130px" value="" disabled><br>
+            <input type="button" style="margin: 5px;" id="add" value="+"
+                onclick="fnAdd(parseFloat(var1.value), parseFloat(var2.value))">
+            <input type="button" style="margin: 5px;" id="subtract" value="-"
+                onclick="fnSubtr(parseFloat(var1.value), parseFloat(var2.value))">
+            <input type="button" style="margin: 5px;" id="multiply" value="*"
+                onclick="fnMult(parseFloat(var1.value), parseFloat(var2.value))">
+            <input type="button" style="margin: 5px;" id="divide" value="/"
+                onclick="fnDiv(parseFloat(var1.value), parseFloat(var2.value))">
+            <input type="button" style="margin: 5px;" id="modulus" value="%"
+                onclick="fnMod(parseFloat(var1.value), parseFloat(var2.value))">
+        </form>
+    </div>
+
+    <hr>
+
+    <div id="inc_decr" style="margin: 5px; text-align: center; ">
+        <form id="calculator">
+            <input type="button" style="margin: 5px;" id="decrement" value="-"
+                onclick="fnDecr(year.value)">
+            <input type="number" id="year" style="width: 50px;" value="2022">
+            <input type="button" style="margin: 5px;" id="increment" value="+"
+                onclick="fnInc(year.value)">
+        </form>
+    </div>
+    <hr>
+    <div id="random" style="margin: 5px; text-align: center; ">
+        <p>Gives random number between 1 and <input type="number" id="randomMax" style="width: 60px;" value="10"></p>
+        <button type="button" value="Random" onclick="fnRandom(randomMax.value)">Random</button>
+    </div>
+
+
+</body>
+
+</html>
