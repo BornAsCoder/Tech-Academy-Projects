@@ -22,12 +22,14 @@ let a = '25';
 let b = 25;
 
 if (a === b) {
-    document.writeln(`Value and Type of ${a} and ${b} are equal!`)
+    document.write(`Value and Type of ${a} and ${b} are equal!<br>`)
 } 
 else if (a == b) {
-    document.writeln(`Value of ${a} and ${b} are equal, but types are different!`)
+    document.write(`Value of ${a} and ${b} are equal, but types are different!<br>`)
 }
 else
 {
-    document.writeln(`Value of ${a} and ${b} are not equal!`)
+    document.write(`Value of ${a} and ${b} are not equal!<br>`)
 }
+
+document.write(a + b);
