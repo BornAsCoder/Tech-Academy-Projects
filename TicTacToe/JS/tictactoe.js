@@ -154,7 +154,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     disableClick(); //disable click while the win sound is playing
     audio("./media/winGame.mp3");   //play win sound
     animateLineDrawing();       //call main animation loop
-    setTimeout(function () { clear(); resetGame(); }, 2000)
+    setTimeout(function () { clear(); resetGame(); }, 1300)
 }
 
 //reset the game
