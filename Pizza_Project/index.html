@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Menu Project</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="./JS/main.js" defer></script>
+</head>
+
+<body>
+    <div id="menuBG">
+        <h1>Pizza Drill Tutorial</h1>
+        <button id="btnAddToOrder" type="button" onclick="addToOrder()" value="Add to Order">Add to Order</button>
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn" type="button" value="Show Order">Show Order</button>
+        <form id="frmMenu">
+            <div class="menu left">
+                <h3>Size:</h3>
+                <input class="size" type="radio" name="Size" value="Extra Small Pizza">Extra Small Pizza<br>
+                <input class="size" type="radio" name="Size" value="Personal Pizza">Personal Pizza<br>
+                <input class="size" type="radio" name="Size" value="Small Pizza">Small Pizza<br>
+                <input class="size" type="radio" name="Size" value="Medium Pizza">Medium Pizza<br>
+                <input class="size" type="radio" name="Size" value="Large Pizza">Large Pizza<br>
+                <input class="size" type="radio" name="Size" value="Extra Large Pizza">Extra Large Pizza<br>
+            </div>
+
+            <div class="menu center">
+                <h3>Vegetables:</h3>
+                <input class="toppings" type="checkbox" name="Topping" value="Mushrooms">Mushrooms<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Tomatoes">Tomatoes<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Onions">Onions<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Olives">Olives<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Green Peppers">Green Peppers<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Corn">Corn<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Red Peppers">Red Peppers<br>
+            </div>
+
+            <div class="menu right">
+                <h3>Meats:</h3>
+                <input class="toppings" type="checkbox" name="Topping" value="Pepperoni">Pepperoni<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Sausage">Sausage<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Canadian Bacon">Canadian Bacon<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Ground Beef">Ground Beef<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Anchovy">Anchovy<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Salami">Salami<br>
+                <input class="toppings" type="checkbox" name="Topping" value="BBQ Chicken">BBQ Chicken<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Plain Chicken">Plain Chicken<br>
+            </div>
+            <div id="cart">
+                <div id="showText"></div>
+                <div id="totalPrice"></div>
+            </div>
+        </form>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="col-container">
+                <div class="row">
+                    <h4><strong>Your Order: </strong></h4>
+                </div>
+                <div class="col" id="col-container0" hidden>
+                    <p class="modal_par" id="col0"></p>
+                </div>
+                <div class="col" id="col-container1" hidden>
+                    <p class="modal_par" id="col1"></p>
+                </div>
+                <div class="col" id="col-container2" hidden>
+                    <p class="modal_par" id="col2"></p>
+                </div>
+                <div class="row" id="total"></div>
+                <button id="checkout" type="button" value="Checkout">Checkout</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+body {
+    background-color: seashell;
+}
+
+h1 {
+    margin: 0 0 0 20px;
+    text-align: center;
+    font-family: Gill Sans, Arial, Tahoma, Serif;
+    color: #b48608;
+}
+
+h3 {
+    font-family: Gill Sans, Arial, Tahoma, Serif;
+    color: teal;
+}
+
+div {
+    font-family: Serif, Arial, Tahoma, ;
+    color: darkgreen;
+}
+
+#menuBG {
+    width: 400px;
+    height: 470px;
+    /* border: 1px solid; to delete */
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 600px;
+    height: 200px;
+    right: 0px;
+    margin: 10px auto;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+.left {
+    width: 200px;
+    height: 250px;
+    float: left;
+}
+
+.center {
+    width: 200px;
+    height: 250px;
+    float: left;
+}
+
+.right {
+    width: 200px;
+    height: 250px;
+    float: right;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#cart {
+    top: 0;
+    margin: 0px auto;
+    width: 400px;
+    height: 200px;
+}
+
+
+.w3-container {
+    width: 200px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: seashell;
+    margin: 10% auto;
+    /* 15% from the top and centered */
+    /* max-height: 500px; */
+    padding: 10px;
+    border: 1px solid #888;
+    width: 40%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.col-container {
+    /* Make the container element behave like a table */
+    display: table;
+}
+
+.col {
+    /* Make elements inside the container behave like table cells */
+    display: table-cell;
+    border: 0.3px dotted slategrey;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.row {
+    display: table-row;
+}
+
+button {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #babfc3;
+    padding: 7px 16px;
+    min-height: 36px;
+    min-width: 36px;
+    color: #202223;
+    background: #ffffff;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
+}
+
+button:hover {
+    background: #f6f6f7;
+    outline: 1px solid transparent;
+}
