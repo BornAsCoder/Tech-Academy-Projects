@@ -1,4 +1,4 @@
-.gallery-container{
+.gallery-container {
     display: flex;
     flex-wrap: wrap;
     width: 60%;
@@ -29,12 +29,12 @@
 .sign-info {
     display: none;
     position: absolute;
-    opacity: 1; 
+    opacity: 1;
     margin: 20px;
     z-index: 222;
 }
 
-.photo-container:active  .sign-info {
+.photo-container:active .sign-info {
     display: block;
     opacity: 1;
     border-radius: 4px;
@@ -77,7 +77,7 @@ table td {
     word-break: normal;
 }
 
-table td:nth-child(odd){
+table td:nth-child(odd) {
     font-weight: 550;
     padding-right: 10px;
 }
@@ -94,4 +94,21 @@ table th {
     overflow: hidden;
     padding: 10px 5px;
     word-break: normal;
+}
+
+#show-gallery {
+    margin: 0 auto;
+    color: #B3B3B3;
+    display: block;
+    position: relative;
+    padding: 12px 40px;
+    border: 2px double #9D9FA2;
+    border-radius: 2.5px;
+    background-color: #387593;
+    cursor: pointer;
+}
+
+#show-gallery:hover {
+    background-color: #5EAFDF;
+    color: #fff;
 }

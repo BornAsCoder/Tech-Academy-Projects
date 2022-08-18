@@ -13,6 +13,8 @@
 	<link rel="stylesheet" type="text/css" href="./css/video.css">
 	<link rel="stylesheet" type="text/css" href="./css/contact.css">
 	<link rel="stylesheet" type="text/css" href="./css/footer.css">
+	<link rel="stylesheet" type="text/css" href="./css/lightbox.css">
+	<script src="./JS/main.js" defer></script>
 	<meta charset="utf-8">
 	<title>One Page Website | Assignment 40</title>
 </head>
@@ -21,9 +23,9 @@
 			BODY
 ========================== -->
 
-	<body>
+<body>
 	<div class="wrap">
-			
+
 		<!-- NAV -->
 		<div class="nav-container">
 			<nav>
@@ -34,7 +36,7 @@
 			</nav>
 		</div>
 		<!-- END NAV -->
-		
+
 		<!-- HOME -->
 		<div id="home">
 			<div class="home-container">
@@ -49,7 +51,7 @@
 			</div>
 		</div>
 		<!-- END HOME -->
-		
+
 		<!-- GALLERY -->
 		<div id="gallery">
 			<h2>Gallery</h2>
@@ -57,54 +59,54 @@
 				<!-- PHOTO CONTAINER 1 -->
 				<div class="photo-container">
 					<img class="image" src="img/sign_aries.webp" alt="Aries">
-						<div class="sign-info">
-							<table>
-								<thead>
-									<tr>
-										<th colspan="5">Aries</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td rowspan="6"><img class="avatar" src="img/sign_aries.webp"></td>
-									</tr>
-									<tr>
-										<td>Date: </td>
-										<td>Mar 21 - Apr 19</td>
-										<td>Element: </td>
-										<td>Fire</td>
-									</tr>
-									<tr>
-										<td>Polarity: </td>
-										<td>Positive</td>
-										<td>Spirit Color: </td>
-										<td>Red</td>
-									</tr>
-									<tr>
-										<td>Quality: </td>
-										<td>Cardinal</td>
-										<td>Lucky Gem:</td>
-										<td>Diamond</td>
-									</tr>
-									<tr>
-										<td>Ruling Planet: </td>
-										<td>Mars</td>
-										<td>Flower:</td>
-										<td>Thistle & Honeysuckle</td>
-									</tr>
-									<tr>
-										<td>Ruling House: </td>
-										<td>First</td>
-										<td>Top Love Matches: </td>
-										<td>Sagittarius</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
+					<div class="sign-info">
+						<table>
+							<thead>
+								<tr>
+									<th colspan="5">Aries</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="6"><img class="avatar" src="img/sign_aries.webp"></td>
+								</tr>
+								<tr>
+									<td>Date: </td>
+									<td>Mar 21 - Apr 19</td>
+									<td>Element: </td>
+									<td>Fire</td>
+								</tr>
+								<tr>
+									<td>Polarity: </td>
+									<td>Positive</td>
+									<td>Spirit Color: </td>
+									<td>Red</td>
+								</tr>
+								<tr>
+									<td>Quality: </td>
+									<td>Cardinal</td>
+									<td>Lucky Gem:</td>
+									<td>Diamond</td>
+								</tr>
+								<tr>
+									<td>Ruling Planet: </td>
+									<td>Mars</td>
+									<td>Flower:</td>
+									<td>Thistle & Honeysuckle</td>
+								</tr>
+								<tr>
+									<td>Ruling House: </td>
+									<td>First</td>
+									<td>Top Love Matches: </td>
+									<td>Sagittarius</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 					<div class="photo-overlay">
 						<h3>Click me!</h3>
 					</div>
-					
+
 				</div>
 				<!-- END PHOTO CONTAINER 1 -->
 
@@ -691,37 +693,143 @@
 				</div>
 				<!-- END PHOTO CONTAINER 12 -->
 			</div>
-		</div>	
+			<button type="button" onclick="openLightbox();toSlide(1)" id="show-gallery">Show Gallery</button>
+		</div>
+
+		<div id="Lightbox" class="modal">
+			<span class="close pointer" onclick="closeLightbox()">&times;</span>
+			<div class="modal-content">
+				<div class="slide">
+					<img src="./img/lightbox/1.avif" class="image-slide" alt="Aries" />
+				</div>
+				<div class="slide">
+					<img src="./img/lightbox/2.avif" class="image-slide" alt="Taurus" />
+				</div>
+				<div class="slide">
+					<img src="./img/lightbox/3.avif" class="image-slide" alt="Gemini" />
+				</div>
+				<div class="slide">
+					<img src="./img/lightbox/4.avif" class="image-slide" alt="Cancer" />
+				</div>
+				<div class="slide">
+					<img src="./img/lightbox/5.avif" class="image-slide" alt="Leo" />
+				</div>
+				<div class="slide">
+					<img src="./img/lightbox/6.avif" class="image-slide" alt="Virgo" />
+				</div>
+				<div class="slide">
+					<img src="./img/lightbox/7.avif" class="image-slide" alt="Libra" />
+				</div>
+				<div class="slide">
+					<img src="./img/lightbox/8.avif" class="image-slide" alt="Scorpio" />
+				</div>
+				<div class="slide">
+					<img src="./img/lightbox/9.avif" class="image-slide" alt="Sagittarius" />
+				</div>
+				<div class="slide">
+					<img src="./img/lightbox/10.avif" class="image-slide" alt="Capricorn" />
+				</div>
+				<div class="slide">
+					<img src="./img/lightbox/11.avif" class="image-slide" alt="Aquarius" />
+				</div>
+				<div class="slide">
+					<img src="./img/lightbox/12.avif" class="image-slide" alt="Pisces" />
+				</div>
+
+				<a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+				<a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+				<div class="dots">
+					<div class="col">
+						<img src="./img/lightbox/1.avif" class="modal-preview hover-shadow" onclick="toSlide(1)"
+							alt="Aries" />
+					</div>
+					<div class="col">
+						<img src="./img/lightbox/2.avif" class="modal-preview hover-shadow" onclick="toSlide(2)"
+							alt="Taurus" />
+					</div>
+					<div class="col">
+						<img src="./img/lightbox/3.avif" class="modal-preview hover-shadow" onclick="toSlide(3)"
+							alt="Gemini" />
+					</div>
+					<div class="col">
+						<img src="./img/lightbox/4.avif" class="modal-preview hover-shadow" onclick="toSlide(4)"
+							alt="Cancer" />
+					</div>
+					<div class="col">
+						<img src="./img/lightbox/5.avif" class="modal-preview hover-shadow" onclick="toSlide(5)"
+							alt="Leo" />
+					</div>
+					<div class="col">
+						<img src="./img/lightbox/6.avif" class="modal-preview hover-shadow" onclick="toSlide(6)"
+							alt="Virgo" />
+					</div>
+					<div class="col">
+						<img src="./img/lightbox/7.avif" class="modal-preview hover-shadow" onclick="toSlide(7)"
+							alt="Libra" />
+					</div>
+					<div class="col">
+						<img src="./img/lightbox/8.avif" class="modal-preview hover-shadow" onclick="toSlide(8)"
+							alt="Scorpio" />
+					</div>
+					<div class="col">
+						<img src="./img/lightbox/9.avif" class="modal-preview hover-shadow" onclick="toSlide(9)"
+							alt="Sagittarius" />
+					</div>
+					<div class="col">
+						<img src="./img/lightbox/10.avif" class="modal-preview hover-shadow" onclick="toSlide(10)"
+							alt="Capricorn" />
+					</div>
+					<div class="col">
+						<img src="./img/lightbox/11.avif" class="modal-preview hover-shadow" onclick="toSlide(11)"
+							alt="Aquarius" />
+					</div>
+					<div class="col">
+						<img src="./img/lightbox/12.avif" class="modal-preview hover-shadow" onclick="toSlide(12)"
+							alt="Pisces" />
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- END GALLERY -->
-		
+
 		<!-- VIDEO -->
 		<div id="video">
 			<h2>Video</h2>
 			<div class="video-package">
 				<!-- VIDEO CONTAINER 1 -->
 				<div class="video-container">
-					<iframe width="448" height="252" src="https://www.youtube.com/embed/iKf6cdYjH-I" title="TikTok Accurate Zodiac Signs Compilation | Part 1" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="448" height="252" src="https://www.youtube.com/embed/iKf6cdYjH-I"
+						title="TikTok Accurate Zodiac Signs Compilation | Part 1" frameborder="1"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
 				</div>
 				<!-- END VIDEO CONTAINER 1 -->
 
 				<!-- VIDEO CONTAINER 2 -->
 				<div class="video-container">
-					<iframe width="448" height="252" src="https://www.youtube.com/embed/G2OZWEvYoas" title="Zodiac Sign Reaction After Quarantine" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="448" height="252" src="https://www.youtube.com/embed/G2OZWEvYoas"
+						title="Zodiac Sign Reaction After Quarantine" frameborder="1"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
 				</div>
 				<!-- END VIDEO CONTAINER 2 -->
 
 				<!-- VIDEO CONTAINER 3 -->
 				<div class="video-container">
-					<iframe width="448" height="252" src="https://www.youtube.com/embed/7x5ZE6AHSek" title="Top 10 Zodiac Signs That Don't Get Along"
-						frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					<iframe width="448" height="252" src="https://www.youtube.com/embed/7x5ZE6AHSek"
+						title="Top 10 Zodiac Signs That Don't Get Along" frameborder="1"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</div>
 				<!-- END VIDEO CONTAINER 3 -->
 
 				<!-- VIDEO CONTAINER 4 -->
 				<div class="video-container">
-					<iframe width="448" height="252" src="https://www.youtube.com/embed/zj9oIg8h9hg" title="Top 10 Zodiac Sign Myths & Misconceptions"
-						frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					<iframe width="448" height="252" src="https://www.youtube.com/embed/zj9oIg8h9hg"
+						title="Top 10 Zodiac Sign Myths & Misconceptions" frameborder="1"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</div>
 				<!-- END VIDEO CONTAINER 4 -->
@@ -729,22 +837,22 @@
 			</div>
 		</div>
 		<!-- END VIDEO -->
-		
+
 		<!-- CONTACT -->
 		<div id="contact">
 			<h2>Contact Me</h2>
 			<div class="contact-container">
 				<form action="" method="post">
-				<input class="rsvp" type="text" placeholder="First Name">					
-				<input class="rsvp" type="text" placeholder="Last Name">					
-				<input class="rsvp" type="text" placeholder="Email Address">
-				<input class="rsvp" type="text" placeholder="Phone Number">
-				<input class ="submit" type="submit" placeholder="Submit">
-			</form>
+					<input class="rsvp" type="text" placeholder="First Name">
+					<input class="rsvp" type="text" placeholder="Last Name">
+					<input class="rsvp" type="text" placeholder="Email Address">
+					<input class="rsvp" type="text" placeholder="Phone Number">
+					<input class="submit" type="submit" placeholder="Submit">
+				</form>
 			</div>
 		</div>
 		<!-- END CONTACT -->
-		
+
 		<!-- FOOTER -->
 		<footer id="footer">
 			<a href="http://www.onepagewebsite.com">www.onepagewebsite.com</a> &nbsp;|&nbsp; &copy; 2022
@@ -752,4 +860,4 @@
 		<!-- END FOOTER -->
 	</div>
 
-	</body>
+</body>
