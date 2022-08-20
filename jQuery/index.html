@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>jQuery Demo</title>
+
+</head>
+
+<body>
+    <div id='container'>
+        <div id='inner'>
+            <h1>Basic jQuery</h1>
+            <button id="show-paragraphs">Show Paragraphs</button>
+            <button id="hide-paragraphs">Hide Paragraphs</button> <br /> <br />
+            <button id="toggle-paragraphs">Hide/Show Paragraphs</button>
+            <p id='1'>Paragraph 1</p>
+            <p id='2'>Paragraph 2</p>
+            <p id='3'>Paragraph 3</p>
+        </div>
+        <button id="hide-header">Hide Header</button>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function () {  // wait until page is loaded
+        $("#2").css({ "color": "red" });  // change color of second paragraph
+        $("#hide-header").click(function () {  // when Hide Header button is clicked, hide h1
+            $("h1").hide();
+        });
+        $("#show-paragraphs").click(function () {  // when Show Paragraphs button is clicked, show paragraphs (with slide down effect)
+            $("p").slideDown(1000);
+        });
+        $("#hide-paragraphs").click(function () {  // when Hide Paragraphs button is clicked, hide paragraphs (with slide up effect)
+            $("p").slideUp(1000);
+        });
+        $("#toggle-paragraphs").click(function () {  // when Hide/Show Paragraphs button is clicked, hide or show paragraphs depending on state (with slide up/down effect)
+            $("p").slideToggle(1000);
+        });
+    });
+
+</script>
+
+</html>
