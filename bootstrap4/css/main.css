@@ -40,3 +40,10 @@
     left: 8px;
     background: currentColor
 }
+
+#modalAlert {
+    display: none;
+}
+#modalForm {
+    display: block;
+}
