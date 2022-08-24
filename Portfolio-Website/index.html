@@ -4,12 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=,initial-scale=1.0">
+    <title>Giruckis Portfolio</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/nav.css">
-    <!-- <link rel="stylesheet" type="text/css" href="./css/menu.css"> -->
+    <link rel="stylesheet" type="text/css" href="./css/slideshow.css">
+    <script src="./JS/main.js" defer></script>
+    <!-- social icons aakashweb.com -->
+    <link rel="stylesheet" type="text/css" href="./css/socializer.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <!-- fav icon -->
+    <link type="image/png" sizes="16x16" rel="icon" href="./img/ico/icons8-anonymous-mask-color-16.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="./img/ico/icons8-anonymous-mask-color-32.png">
+
 </head>
 
 <body>
@@ -20,7 +27,7 @@
 
             <a href="#about">About</a>
             <a href="#GitHub">GitHub</a>
-            <a href="#contact">Contact</a>
+            <a href="javascript:openForm()">Contact</a>
 
         </div>
 
@@ -41,14 +48,13 @@
                 Olegs Portfolio
             </h1>
             <p class="header-text center">
-                <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute
-                authority to
-                arrange a stage or
-                <br>field of battle and to command such unswervingly dutiful actors or troops.
+                <br>One learns from books and example only that certain things can be done. Actual learning requires
+                that you do those
+                things.
                 </q>
-                <br> -Joseph Weizenbaum
+                <br> -Frank Herbert
                 <br>
-                <br> My name is ____. Welcome to my portfolio website. On it, I will tell you about my background and
+                <br> My name is Olegs. Welcome to my portfolio website. On it, I will tell you about my background and
                 experience.
                 <br>
                 <br> Thank you for stopping by and enjoy!
@@ -57,6 +63,62 @@
     </header>
 
     </br></br>
+
+    <!--============= SLIDESHOW SECTION================ -->
+    <!-- SlideShow Container -->
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+                <!-- Slide 1 of 6 -->
+                <div class="mySlides fade grayscale_anim">
+                    <img class="Slideshow_Images" src="./photo/1.jpg" alt="Picture of myself">
+                    <div class="text">I'm available to assist you on your project!</div>
+                </div>
+                <!-- Slide 2 of 6 -->
+                <div class="mySlides fade grayscale_anim">
+                    <img class="Slideshow_Images" src="./photo/2.jpg" alt="Picture of myself">
+                    <div class="text">I am a junior front end web developer,<br> trained in:<br>HTML, CSS, JavaScript.
+                    </div>
+                </div>
+                <!-- Slide 3 of 6 -->
+                <div class="mySlides fade grayscale_anim">
+                    <img class="Slideshow_Images" src="./photo/3.jpg" alt="Picture of myself">
+                    <div class="text">Familiar with: bootstrap, jQuery.</div>
+                </div>
+                <!-- Slide 4 of 6 -->
+                <div class="mySlides fade grayscale_anim">
+                    <img class="Slideshow_Images" src="./photo/4.jpg" alt="Picture of myself">
+                    <div class="text">Passioned for learning. </div>
+                </div>
+                <!-- Slide 5 of 6 -->
+                <div class="mySlides fade grayscale_anim">
+                    <img class="Slideshow_Images" src="./photo/5.jpg" alt="Picture of myself">
+                    <div class="text">Well motivated.</div>
+                </div>
+                <!-- Slide 6 of 6 -->
+                <div class="mySlides fade grayscale_anim">
+                    <img class="Slideshow_Images" src="./photo/6.jpg" alt="Picture of myself">
+                    <div class="text"><a style="cursor:pointer" class="white-text contact" onclick="openForm()">Contact
+                            me now!</a></div>
+                </div>
+                <!-- Previous and next buttons -->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br> <!-- Adds a space between the slideshow images and the dots -->
+
+            <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+    </div>
+
 
     <!--============= ABOUT SECTION================ -->
     <div class="row" id="about">
@@ -68,24 +130,31 @@
                 </h2>
                 <p>
                     I am a junior web developer who loves to learn something new!<br>
-                    <br>As a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>, I have learned so far 
+                    <br>As a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech
+                        Academy</a>, I have learned so far
                     following web and programming languages: HTML, CSS, Bootstrap.
                     <br>
-                    <br>Looking forward to work with you on your project. <a href="#contact">Contact</a> me
-                    below!
+                    I do "parallel self study" from different sources like:
+                    <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>,
+                    <a href="https://www.sololearn.com/Profile/25584234/?ref-app" target="_blank">SoloLearn</a>,
+                    <a href="https://www.w3schools.com/" target="_blank">w3schools</a>,
+                    <a href="https://www.youtube.com/" target="_blank">YouTube</a>, official docs and other.
+                    <br /><br />
+                    Looking forward to work with you on your project. <a href="javascript:openForm()">Contact</a> me!
                 </p>
             </div>
         </div>
         <!--Right column-->
         <div class="col-2 center">
-            <img class="scale-grey" src="./img/coding.avif" alt="coding">
+            <img class="scale-grey" src="./img/coding.png" alt="coding">
         </div>
     </div>
     <!--============= GITHUB SECTION================ -->
     <div class="row" id="GitHub">
         <!--Left column-->
         <div class="col-2 center">
-            <a href="https://github.com/BornAsCoder" target="_blank"><img class="scale-grey" src="./img/github.jpg" alt="github"></a>
+            <a href="https://github.com/BornAsCoder" target="_blank"><img class="scale-grey" src="./img/github.jpg"
+                    alt="github"></a>
         </div>
         <!--Right column-->
         <div class="col-1">
@@ -94,40 +163,55 @@
                     Github
                 </h2>
                 <p>
-                    You can check my projects on my github: <a href="https://github.com/BornAsCoder" target="_blank">github.com/BornAsCoder</a>
+                    You can check my projects on my github: <a href="https://github.com/BornAsCoder"
+                        target="_blank">BornAsCoder</a>
                 </p>
             </div>
         </div>
     </div>
 
-    <!--============= CONTACT SECTION================ -->
-    <div class="row" id="contact">
-        <!-- Left column -->
-        <div class="col-1">
-            <h2>
-                Contact
-            </h2>
+    <!--============= SOCIAL MEDIA SECTION================ -->
+    <div class="sr-sharebar sr-sb-vl sr-sb-left">
+        <div class="socializer" data-features="32px,circle,zoom,vertical,font-lg,bdr-md,bg-white,sw-icon-1,pad"
+            data-sites="github,linkedin,twitter,facebook,instagram" data-text="in"
+            data-meta-twitter="https://twitter.com/BornAsCoder" data-meta-facebook="https://www.facebook.com/oleg.giru"
+            data-meta-github="https://github.com/BornAsCoder"
+            data-meta-linkedin="https://www.linkedin.com/in/olegs-giruckis-611017238/"
+            data-meta-instagram="https://www.instagram.com/girutsky/"></div>
+    </div>
+
+    <!--============= CONTACT FORM ================ -->
+    <div id="contact">
+        <div id="contactform">
+            <span id="close">&times;</span>
             <form action="https://formspree.io/f/xgedbryp" method="POST">
+                <label>Name:</label>
+                <input type="text" id="Name" name="Name" placeholder="Your name" required>
                 <label>Email:</label>
-                <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                <input type="text" id="Email" name="Email" placeholder="Please enter your email here" required>
                 <label>Message:</label>
-                <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                <input type="text" id="Message" name="Message" placeholder="Please write your message here" required>
+                <input type="reset" value="RESET">
                 <input type="submit" value="SUBMIT">
 
             </form>
         </div>
-        <!-- Right column -->
-        <div class="col-2 center">
-            <a href="mailto:olegs.giruckis@gmail.com?subject=Portfolio%20Site%20"><img class="scale-grey" src="./img/email.webp" alt="email-me"></a>
-        </div>
     </div>
+
 
     <!--============= FOOTER SECTION================ -->
     <footer>
-        <p class="footer-text center">&copy iPerfume 2022 &nbsp;&nbsp;  <a href="http://iperfume.uk"
-                target="_blank">iperfume.uk</a></p>
+        <p class="footer-text center">&copy Giruckis.com 2022 &nbsp;&nbsp; <a href="http://portfolio.giruckis.com"
+                target="_blank">portfolio.giruckis.com</a></p>
 
     </footer>
+    <!-- social media icons -->
+    <script src="https://cdn.jsdelivr.net/gh/vaakash/socializer@2f749eb/js/socializer.min.js"></script>
+    <script>
+        (function () {
+            socializer('.socializer');
+        }());
+    </script>
 </body>
 
 </html>

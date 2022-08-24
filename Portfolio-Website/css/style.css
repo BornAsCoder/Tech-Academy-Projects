@@ -1,13 +1,18 @@
 /* --- GENERAL --- */
 * {
-     box-sizing: border-box;
-     /* This creates a box with a border within which we will place most of our text */
+     box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */ 
+}
+
+html { 
+     scroll-behavior: smooth;  /* smooth scrolling */
 }
 
 body {
-     margin: 0;
-     /* Site displays all the way to the edge of the browser screen */
+     margin: 0; /* Site displays all the way to the edge of the browser screen */
+}
 
+q {
+     font-style: italic;  /* Makes the quote italicized */
 }
 
 h1,
@@ -85,6 +90,11 @@ p {
      #Typing_Video {
           display: none;
      }
+
+     /* change background color, to keep slideshow dots visible */
+     body {
+           background-color: rgba(0, 0, 0, .35);
+     }
 }
 
 
@@ -124,7 +134,7 @@ img {
      height: 340px;
 }
 
-/* contact form */
+/* CONTACT FORM */
 
 /* input[type=text] targets all text input sections of the contact form */
 input[type=text] {
@@ -144,7 +154,7 @@ input[type=text] {
      /* Adds a margin to the bottom of the text box */
      resize: vertical;
      /* This allows the user to resize the text boxes vertically */
-     font-family: Perpetua, Rockwell Extra Bold;
+     font-family: Perpetua, Rockwell Extra Bold;     
 }
 
 /* Submit button */
@@ -163,7 +173,7 @@ input[type=submit] {
      /* Gives the submit button the same rounded corners as the text boxes */
      cursor: pointer;
      /* Changes the cursor to pointer when over the submit button */
-     display: block;
+     display: inline-block;
      /* Allows the submit button to be centered */
      margin-left: auto;
      /* In combination with "margin-right: auto" this will center the submit button */
@@ -174,9 +184,58 @@ input[type=submit] {
 /* Hover effect for submit button */
 input[type=submit]:hover {
      background-color: aquamarine;
-     /* Turns the background of the submit button white when the user hovers over it */
+     /* Turns the background of the submit button aquamarine when the user hovers over it */
      color: brown;
-     /* Turns the font black when hovered over */
+     /* Turns the font brown when hovered over */
+}
+
+/* Reset button */
+input[type=Reset] {
+     background-color: rgb(242, 125, 125);
+     /* Sets the background color of the submit button to black */
+     color: black;
+     /* Sets the font color of the Submit button to white */
+     font-weight: bold;
+     /* Makes the font of the submit button bold */
+     padding: 12px 20px;
+     /* Adds padding to the submit button */
+     border: none;
+     /* Removes the border from the submit button */
+     border-radius: 4px;
+     /* Gives the submit button the same rounded corners as the text boxes */
+     cursor: pointer;
+     /* Changes the cursor to pointer when over the submit button */
+     display: inline-block;
+     /* Allows the submit button to be centered */
+     margin-left: auto;
+     /* In combination with "margin-right: auto" this will center the submit button */
+     margin-right: auto;
+     font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/* Hover effect for reset button */
+input[type=reset]:hover {
+     background-color: brown;
+     /* Turns the background of the submit button brown when the user hovers over it */
+     color: aquamarine;
+     /* Turns the font aquamarine when hovered over */
+}
+
+/* The Close Button */
+#close {
+     color: #aaaaaa;
+     float: right;
+     font-size: 35px;
+     font-weight: bold;
+     margin-right: 10px;
+     margin-top: 7px;
+}
+
+#close:hover,
+#close:focus {
+     color: #000;
+     text-decoration: none;
+     cursor: pointer;
 }
 
 /* Form element */
@@ -184,9 +243,35 @@ form {
      border-radius: 5px;
      /* Rounds the corners of the contact form */
      background-color: #f2f2f2;
-     padding: 10px;
+     padding: 20px;
      /* Adds padding to the contact form */
      font-family: "Trebuchet MS", Optima;
+     height: 100%;
+     width: 100%;
+}
+
+#contact {
+     display: none;
+     z-index: 1;  /* Sit on top */
+     background-color: rgb(0, 0, 0); 
+     background-color: rgba(0, 0, 0, 0.3);
+     padding-top: 8vw; /* Location of the box */
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     position: fixed;
+     
+}
+
+/* Modal Content */
+#contactform {
+     background-color: #fefefe;
+     margin: auto;
+
+     border: 1px solid #888;
+     width: 80%;
+     border-radius: 7px;
 }
 
 /* --- FOOTER --- */
@@ -200,4 +285,60 @@ footer {
 footer p {
      margin-bottom: 0px;
           margin-top: 0px;
+}
+
+
+/*Media rules for paragraph font size for different screen sizes*/
+@media screen and (max-width: 527px) {
+     p {
+          font-size: 2.50vw;
+     }
+}
+
+@media screen and (min-width: 528px) and (max-width: 660px) {
+     p {
+          font-size: 2.25vw;
+     }
+}
+
+@media screen and (min-width: 661px) and (max-width: 799px) {
+     p {
+          font-size: 2vw;
+     }
+}
+
+@media screen and (min-width: 800px) and (max-width: 924px) {
+     p {
+          font-size: 1.75vw;
+     }
+}
+
+@media screen and (min-width: 925px) and (max-width: 1050px) {
+     p {
+          font-size: 1.5vw;
+     }
+}
+
+@media screen and (min-width: 1051px) and (max-width: 1310px) {
+     p {
+          font-size: 1.25vw;
+     }
+}
+
+@media screen and (min-width: 1311px) and (max-width: 1535px) {
+     p {
+          font-size: 1vw;
+     }
+}
+
+@media screen and (min-width: 1536px) and (max-width: 2269px) {
+     p {
+          font-size: 0.85vw;
+     }
+}
+
+@media screen and (min-width: 2270px) {
+     p {
+          font-size: 0.75vw;
+     }
 }
